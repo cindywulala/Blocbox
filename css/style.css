@@ -255,8 +255,7 @@ header .hero img {
 .testimonials ul li {
   list-style-type: none;
 }
-/* try to move column 2 and 4 down by 20px, but the code doesn't work */
-.tetimonials ul li.twenty-px-down {
+.testimonials ul li.twenty-px-down {
   margin-top: 20px;
 }
 
