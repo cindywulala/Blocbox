@@ -26,19 +26,27 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  border: 2px dotted blue;
 }
-/* don't understand */  /* don't understand */  /* don't understand container:after or before */
+/* 
+ * don't fully understand , when to use margin, when to use padding
+ *
+ */ 
 .container:before,
 .container:after {
   content: " ";
   display: table;
 }
-/* don't understand */  /* don't understand */  /* don't understand container:after */
+/* 
+ * don't fully understand 
+ *
+ */ 
 .container:after {
   clear: both;
 }
-/* don't understand float and position */  /* don't understand float and position and margin */
+/* 
+ * don't fully understand 
+ *
+ */
 .one-half, .one-third, .one-fourth {
   width: 96%;
   float: left;
@@ -108,7 +116,7 @@ header nav ul > li > a {
 header nav ul > li.btn-outline:hover > a {
   color: #34495E;
 }
-/* header hero */ /* not sure about what postition relative means */
+/* header hero */
 header .hero {
   text-align: center;
   display: block;
@@ -282,7 +290,10 @@ header .hero img {
   border-width: 10px;
   margin-left: -10px;
 }
-/*  don't understand float and display */ /*  don't understand float and display */
+/* 
+ * don't fully understand 
+ *
+ */
 .testimonials img {
   height: 65px;
   width: 65px;
@@ -297,4 +308,53 @@ header .hero img {
   text-align: left;
   font-size: 13px;
   margin-top: 30px;
+}
+/* footer */
+footer {
+  background-color: #34495e;
+  background-image: linear-gradient (to top, #3498DB 0%, #3498DB 50%, #34495e 50%, #34495E 100%);
+  color: #FFFFFF;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+footer p, footer nav ul {
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  margin: 10px auto 0;
+}
+footer nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .right-footer-block {
+  background-color: transparent;
+}
+footer .logo {
+  padding: 2.35em 0;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 992px) {
+  footer {
+    background-color: #3498DB;
+    background-image: linear-gradient (to left, #3498db 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+    height: 100px;
+  }
+  footer p, footer nav ul {
+    padding: 2em 0;
+    text-align: left;
+  }
+  footer .right-footer-block {
+    background-color: #3498DB;
+  }
+  footer .logo {
+    padding: 2em 0 2em 1.5em;
+  }
 }
